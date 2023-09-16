@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BinanoDEX</title>
+    <title>BinanoDex</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/fonts/font-face.css">
@@ -15,62 +15,53 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container d-flex justify-content-center">
-                <a class="navbar-brand" href="#"><img src="./public/images/binanodex.png" alt="BinanoDEX"></a>
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="public/images/binanodex.png" alt="BinanoDex" class="logo-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О НАС</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ПРЕИМУЩЕСТВА</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main class="main">
-        <section class="section section1">
+        <section class="main-section">
             <div class="container">
-                <div class="block-container">
-                    <div class="container-label">
-                        <svg class="marker" xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6"
-                            fill="none">
-                            <circle cx="3" cy="3" r="3" fill="#ACD700" />
-                        </svg>
-                        <span>с нуля до эксперта!</span>
+                <div class="top-bg"></div>
+                <div class="container-content">
+                    <h2 class="t-white">ОТКРОЙТЕ ДЛЯ СЕБЯ</h2>
+                    <h2 class="t-orange">МИР КРИПТОВАЛЮТЫ</h2>
+                    <div class="tag-p">
+                        <img src="public/images/marker.svg" alt="C нуля до эксперта">
+                        <span>C нуля до эксперта</span>
                     </div>
-                    <h2 class="container-title">Откройте для себя <br> мир криптовалюты</h2>
-                    <p class="container-subtitle">Поднимите свои навыки в криптовалюте <br> на новый уровень с личным
-                        наставником!</p>
-                    <a class="container-link" href="#"><button class="btn"><span>перейти в чат-бот</span></button></a>
-                    <div class="container-subtitle-btn">
-                        <svg class="marker" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
-                            <circle cx="2" cy="2" r="2" fill="#ACD700" />
-                        </svg>
-                        <span>Подайте заявку и мы подберём вам личного эксперта</span>
+                    <img src="public/images/cryptocurrencies.png" alt="" class="tag-subimg">
+                    <ul>
+                        <li>
+                            Поднимите свои навыки в криптовалюте <br> на новый уровень с личным наставником!
+                        </li>
+                    </ul>
+                    <div class="btn-container">
+                        <a href="#"><button class="btn"><span>ПЕРЕЙТИ В ЧАТ-БОТ</span></button></a>
+                        <p>Подайте заявку и мы подберём вам личного эксперта</p>
                     </div>
-                    <svg class="arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="89"
-                        viewBox="0 0 24 89" fill="none">
-                        <g filter="url(#filter0_d_15_5)">
-                            <path
-                                d="M11.2929 77.7071C11.6834 78.0976 12.3166 78.0976 12.7071 77.7071L19.0711 71.3431C19.4616 70.9526 19.4616 70.3195 19.0711 69.9289C18.6805 69.5384 18.0474 69.5384 17.6569 69.9289L12 75.5858L6.34314 69.9289C5.95262 69.5384 5.31945 69.5384 4.92893 69.9289C4.5384 70.3195 4.5384 70.9526 4.92893 71.3431L11.2929 77.7071ZM11 -4.37114e-08L11 77L13 77L13 4.37114e-08L11 -4.37114e-08Z"
-                                fill="url(#paint0_linear_15_5)" />
-                        </g>
-                        <defs>
-                            <filter id="filter0_d_15_5" x="0.63623" y="0" width="22.7275" height="89"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                <feOffset dy="7" />
-                                <feGaussianBlur stdDeviation="2" />
-                                <feComposite in2="hardAlpha" operator="out" />
-                                <feColorMatrix type="matrix"
-                                    values="0 0 0 0 0.673333 0 0 0 0 0.841667 0 0 0 0 0 0 0 0 0.2 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15_5" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_5"
-                                    result="shape" />
-                            </filter>
-                            <linearGradient id="paint0_linear_15_5" x1="12" y1="0" x2="12" y2="93.8437"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#8CCE00" stop-opacity="0" />
-                                <stop offset="1" stop-color="#ACD700" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
                 </div>
+                <img src="public/images/main-graphic-bitcoin.png" alt="" class="main-section-img">
             </div>
         </section>
     </main>
