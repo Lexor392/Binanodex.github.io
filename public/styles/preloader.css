@@ -1,0 +1,125 @@
+.preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #131313;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+.preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    /* background-color: #a91d1d; */
+    /* background: url('../images/coins/245425226.png') no-repeat center / cover; */
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+
+}
+
+
+
+.preloader__row .bg-img-g {
+    position: absolute;
+}
+
+.preloader__row .bg-img-g1 {
+    width: 50.393px;
+    height: 50.393px;
+    transform: rotate(5.496deg);
+    border-radius: 669.393px;
+    background: #AC520D;
+    mix-blend-mode: overlay;
+    filter: blur(75px);
+}
+
+.preloader__row .bg-img-g2 {
+    width: 50.25px;
+    height: 50.25px;
+    border-radius: 673.25px;
+    background: #AC520D;
+    mix-blend-mode: multiply;
+    filter: blur(75px);
+}
+
+.preloader__row .bg-img-g3 {
+    width: 40.684px;
+    height: 40.684px;
+    transform: rotate(5.496deg);
+    border-radius: 580.684px;
+    background: #AC520D;
+    mix-blend-mode: lighten;
+    filter: blur(75px);
+}
+
+
+.preloader__row img {
+    position: relative;
+    width: 100px;
+}
+
+.preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader-bounce {
+
+    0%,
+    100% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+}

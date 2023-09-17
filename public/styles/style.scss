@@ -20,9 +20,9 @@ body {
     }
 
     .header {
-        position: absolute;
+        position: relative;
         z-index: 6;
-        width: 100%;
+        margin-bottom: -130px;
 
         .navbar {
             position: relative;
@@ -76,8 +76,8 @@ body {
             }
 
             .bg-image1 {
-                left: 0;
-                top: 0;
+                left: -310px;
+                top: -50px;
                 z-index: 2;
             }
 
@@ -199,20 +199,6 @@ body {
                         animation-delay: 5s;
                     }
 
-                    @keyframes gradientSlide {
-                        0% {
-                            background-position: 0% 0%;
-                        }
-
-                        50% {
-                            background-position: 100% 50%;
-                        }
-
-                        100% {
-                            background-position: 0% 0%;
-                        }
-                    }
-
                     .tag-p {
                         position: absolute;
                         right: 28px;
@@ -240,10 +226,26 @@ body {
                             line-height: normal;
                             text-transform: uppercase;
 
-                            background: linear-gradient(270deg, #E47E00 -25.13%, #FDDC02 2.89%, #FFF 55.68%);
+                            background: radial-gradient(circle, #E47E00 -25.13%, #FDDC02 2.89%, #FFF 55.68%);
+                            background-size: 180% 180%;
                             background-clip: text;
                             -webkit-background-clip: text;
                             -webkit-text-fill-color: transparent;
+                            animation: gradientSlide 8s ease-in-out infinite;
+                        }
+                    }
+
+                    @keyframes gradientSlide {
+                        0% {
+                            background-position: 0% 0%;
+                        }
+
+                        50% {
+                            background-position: 100% 50%;
+                        }
+
+                        100% {
+                            background-position: 0% 0%;
                         }
                     }
 
@@ -288,6 +290,7 @@ body {
                                 flex-shrink: 0;
                                 transition: background-image 0.3s ease-in-out;
                                 position: relative;
+                                cursor: pointer;
 
                                 span {
                                     position: relative;
@@ -311,6 +314,7 @@ body {
                                     height: 100%;
                                     background: #FFEE52;
                                     opacity: 0;
+                                    cursor: pointer;
                                     transition: all 0.3s ease;
                                 }
                             }
@@ -399,6 +403,10 @@ body {
                     }
                 }
             }
+        }
+
+        .about-section {
+            height: 1000px;
         }
     }
 

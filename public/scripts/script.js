@@ -1,3 +1,19 @@
+window.onload = function () {
+    document.body.classList.add('loaded');
+}
+
+
+window.onload = function () {
+    document.body.classList.add('loaded');
+}
+var $page = $('html, body');
+$('a[href*="#"]').click(function () {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+});
+
 $(document).ready(function() {
     function applyParallaxEffect(element, intensity) {
         var rAF;
@@ -43,8 +59,10 @@ $(document).ready(function() {
         });
     }
     // Применить эффект к .circle с интенсивностью 20
-    applyParallaxEffect($('.moove20'), 2);
+    applyParallaxEffect($('.moove20'), 10);
 
     // Применить эффект к .rectangle с интенсивностью 10
-    applyParallaxEffect($('.moove10'), 10);
+    applyParallaxEffect($('.moove10'), 8);
+    applyParallaxEffect($('.moove2'), 4);
+    applyParallaxEffect($('.moove1'), 1);
 });
