@@ -65,4 +65,31 @@ $(document).ready(function() {
     applyParallaxEffect($('.moove10'), 8);
     applyParallaxEffect($('.moove2'), 4);
     applyParallaxEffect($('.moove1'), 1);
+
+    
+    function rotateTags() {
+        var $tags = $(".container-people-add .tag");
+        var $activeTag = $tags.filter(".active");
+
+        // Удаляем классы "active", "active2" и "active3" у всех блоков
+        $tags.removeClass("active active2 active3");
+
+        // Перемещаем классы к следующему блоку (или первому, если достигнут конец)
+        if ($activeTag.next().length) {
+            $activeTag.next().addClass("active");
+            if ($activeTag.length) {
+                $activeTag.addClass("active2");
+                if ($activeTag.prev().length) {
+                    $activeTag.prev().addClass("active3");
+                }
+            }
+        } else {
+            $tags.first().addClass("active");
+            $tags.last().addClass("active2");
+            $tags.eq($tags.length - 2).addClass("active3");
+        }
+    }
+
+    // Вызываем функцию rotateTags() каждые 4 секунды
+    setInterval(rotateTags, 4000);
 });
