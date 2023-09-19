@@ -27,3 +27,240 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    body {
+
+        .header {
+            .navbar {
+                padding: 32px 0;
+            }
+        }
+
+        .container {
+
+
+            .btn-container {
+                a {
+                    text-decoration: none;
+
+                    .btn {
+                        width: 150px;
+                        height: 40px;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+
+                        span {
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 8px;
+                    width: 140px;
+                    background-position: 0 0;
+                    padding-left: 7px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .main {
+            .main-section {
+                background: url('../images/main-section-bg2.png') no-repeat center top -10px / 490%;
+
+                .container {
+                    .bg-image {
+                        display: none;
+                    }
+
+                    .img-container {
+                        top: -162px;
+                        left: -180px;
+                        scale: 0.44;
+                    }
+
+                    .container-content {
+                        padding-top: 133px;
+                        padding-bottom: 210px;
+
+                        h2 {
+                            font-size: 43.216px;
+                            font-style: normal;
+                            font-weight: 700;
+                            text-transform: uppercase;
+
+                        }
+
+                        h2.t-white {
+                            line-height: 50.653px;
+                        }
+
+                        h2.t-orange {
+                            line-height: 50.653px;
+                        }
+
+                        .tag-p {
+                            right: -10px;
+                            top: 208px;
+                            scale: 0.5;
+                        }
+
+                        .tag-subimg {
+                            display: none;
+                        }
+
+                        ul {
+                            margin-bottom: 18px;
+
+                            li {
+                                font-size: 8.022px;
+                                line-height: 15.243px;
+                                background-position: 0px 1px;
+                                padding-left: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .about-section {
+                padding-bottom: 80px;
+                background-position: center -250px;
+
+                .container {
+
+                    .bg-image {
+                        display: none;
+                    }
+
+                    .container-title {
+
+                        h2,
+                        h2 span {
+                            font-size: 43.216px;
+                            font-style: normal;
+                            font-weight: 700;
+                            text-transform: uppercase;
+
+                        }
+                    }
+
+                    .bg-image-group {
+                        position: absolute;
+                        right: -460px;
+                        top: -150px;
+                        scale: 0.4;
+                    }
+
+                    .container-content {
+                        margin-top: 20px;
+
+                        .container-card {
+                            width: 100%;
+                            height: 20vw;
+                            padding-left: 20vw;
+
+                            p {
+                                font-size: 3vw;
+                            }
+                        }
+
+                        .container-card:nth-child(1),
+                        .container-card:nth-child(2),
+                        .container-card:nth-child(3) {
+                            background-size: contain;
+                        }
+                    }
+
+                    .bg-image-group {
+                        display: none;
+                    }
+                }
+            }
+
+            .advantages-section {
+                .container {
+                    .bg-image {
+                        display: none;
+                    }
+
+                    .container-title {
+
+                        h2,
+                        h2 span {
+                            font-size: 43.216px;
+                            font-style: normal;
+                            font-weight: 700;
+                            text-transform: uppercase;
+
+                        }
+                    }
+
+                    .container-content {
+                        margin-top: 14px;
+                        height: auto;
+
+                        .card-wrapper {
+                            display: grid;
+
+                            .custom-card {
+                                margin-top: 20px;
+
+                                .card-img {
+                                    width: 100%;
+                                    height: 90vw;
+                                }
+
+                                .card-subtitle {
+                                    margin-top: 6px;
+
+                                    p {
+                                        font-size: 4.6vw;
+                                    }
+                                }
+                            }
+                        }
+
+                        .container-subtitle {
+                            margin-top: 60px;
+                            margin-bottom: 11px;
+                            color: #fff;
+                            text-align: center;
+                            font-family: Muller;
+                            font-size: 4.2vw;
+                        }
+
+                        .container-people-add {
+                            width: 100%;
+                            scale: 0.6;
+                            top: -60px;
+                            margin-bottom: -70px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            padding: 30px 0 0px 0;
+
+            .container {
+                .footer-content {
+
+                    .block {
+                        a {
+                            p {
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
