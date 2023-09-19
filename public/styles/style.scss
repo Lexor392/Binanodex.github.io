@@ -168,39 +168,74 @@ body {
             padding: 44px 0;
 
             .container {
-                .collapse {
-                    .navbar-nav {
-                        margin-left: auto;
+                .navbar-toggler {
+                    .navbar-toggler-icon {
+                        background-image: url('../images/burger-btn.svg');
+                    }
+                }
 
-                        .nav-item {
-                            padding: 0 20px;
+                .offcanvas {
+                    background: rgb(5, 5, 5);
 
-                            .nav-link {
-                                color: #FFF;
-                                font-family: Montserrat;
-                                font-size: 15px;
-                                font-style: normal;
-                                font-weight: 700;
-                                line-height: normal;
-                                text-transform: uppercase;
-                            }
+                    .offcanvas-title {
+                        padding: 20px;
+                        display: none;
+                        justify-content: space-between;
+                        align-items: center;
 
-                            .nav-link:hover {
-                                color: #FFC700;
-                            }
+                        .navbar-brand {
+                            margin: 0;
+                            padding: 0;
+                            height: max-content;
                         }
 
-                        .nav-item.active {
-                            .nav-link {
-                                color: #FFC700;
-                            }
+                        .btn-close {
+                            background: transparent url('../images/burger-btn-close.svg') center/1em auto no-repeat;
+                            width: 20px;
+                            height: 20px;
+                            background-size: contain;
                         }
+                        .btn-close:focus {
+                            box-shadow: none;
+                            border: none;
+                        }
+                    }
 
-                        .nav-item:nth-child(3) {
-                            padding-right: 0;
+                    .offcanvas-body {
+                        .navbar-nav {
+                            margin-left: auto;
+
+                            .nav-item {
+                                padding: 0 20px;
+
+                                .nav-link {
+                                    color: #FFF;
+                                    font-family: Montserrat;
+                                    font-size: 15px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: normal;
+                                    text-transform: uppercase;
+                                }
+
+                                .nav-link:hover {
+                                    color: #FFC700;
+                                }
+                            }
+
+                            .nav-item.active {
+                                .nav-link {
+                                    color: #FFC700;
+                                }
+                            }
+
+                            .nav-item:nth-child(3) {
+                                padding-right: 0;
+                            }
                         }
                     }
                 }
+
             }
         }
     }
@@ -604,8 +639,9 @@ body {
                 .bg-image2 {
                     position: absolute;
                     right: -414px;
-                    top: 210px; 
+                    top: 210px;
                 }
+
                 .bg-image3 {
                     position: absolute;
                     right: -770px;

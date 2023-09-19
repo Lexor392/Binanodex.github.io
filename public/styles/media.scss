@@ -34,6 +34,33 @@
         .header {
             .navbar {
                 padding: 32px 0;
+
+                .container {
+                    .offcanvas {
+                        .offcanvas-title {
+                            display: flex;
+                        }
+
+                        .offcanvas-body {
+                            .navbar-nav {
+                                .nav-item {
+                                    margin: 10px 0;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    .offcanvas {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        overflow-y: auto;
+                        /* Добавьте это свойство, чтобы обеспечить прокрутку контента, если он слишком длинный. */
+                    }
+                }
             }
         }
 
@@ -71,11 +98,26 @@
 
         .main {
             .main-section {
-                background: url('../images/main-section-bg2.png') no-repeat center top -10px / 490%;
+                background: url("../images/main-section-bg2.png") no-repeat center bottom -270px / 490%;
 
                 .container {
                     .bg-image {
                         display: none;
+                    }
+
+                    .bg-image4 {
+                        display: block;
+                        right: 70px;
+                        top: 80px;
+                        scale: 0.7;
+                        opacity: 0.7;
+                    }
+
+                    .bg-image8 {
+                        display: block;
+                        left: -160px;
+                        top: 220px;
+                        width: 490px;
                     }
 
                     .img-container {
@@ -125,6 +167,10 @@
                             }
                         }
                     }
+                }
+
+                .top-bg {
+                    display: none;
                 }
             }
 
@@ -189,6 +235,30 @@
                         display: none;
                     }
 
+                    .bg-image1 {
+                        display: block;
+                        left: auto;
+                        right: -100px;
+                        top: -50px;
+                        width: 180px;
+                    }
+
+                    .bg-image2 {
+                        display: block;
+                        left: -70px;
+                        right: auto;
+                        top: 980px;
+                        width: 180px;
+                        transform: scaleX(-1);
+                    }
+
+                    .bg-image3 {
+                        display: block;
+                        right: -300px;
+                        top: 1830px;
+                        width: 580px;
+                    }
+
                     .container-title {
 
                         h2,
@@ -248,9 +318,12 @@
 
         .footer {
             padding: 30px 0 0px 0;
+            position: relative;
+            z-index: 5;
 
             .container {
                 .footer-content {
+                    padding: 0 20px;
 
                     .block {
                         a {

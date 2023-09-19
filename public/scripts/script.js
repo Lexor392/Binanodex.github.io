@@ -92,4 +92,14 @@ $(document).ready(function() {
 
     // Вызываем функцию rotateTags() каждые 4 секунды
     setInterval(rotateTags, 4000);
+    
+});
+
+$(document).ready(function() {
+    var offcanvasNavbar = $("#offcanvasNavbar");
+    var navLinks = offcanvasNavbar.find(".nav-link");
+
+    navLinks.on("click", function() {
+        offcanvasNavbar.offcanvas("hide");
+    });
 });

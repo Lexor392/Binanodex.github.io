@@ -21,23 +21,33 @@
                 <a class="navbar-brand" href="#">
                     <img src="public/images/binanodex.png" alt="BinanoDex" class="logo-img">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#main-section">ГЛАВНАЯ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-section">О НАС</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#advantages-section">ПРЕИМУЩЕСТВА</a>
-                        </li>
-                    </ul>
+
+                <div class="offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-title">
+                        <a class="navbar-brand" href="#">
+                            <img src="public/images/binanodex.png" alt="BinanoDex" class="logo-img">
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#main-section" data-bs-dismiss="offcanvas">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-section" data-bs-dismiss="offcanvas">О НАС</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#advantages-section" data-bs-dismiss="offcanvas">ПРЕИМУЩЕСТВА</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                
             </div>
         </nav>
     </header>
@@ -237,10 +247,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="block">
-                    <a href="#"><p>Политика конфиденциальности</p></a>
+                    <a href="#">
+                        <p>Политика конфиденциальности</p>
+                    </a>
                 </div>
                 <div class="block">
-                    <a href="#"><p>Договор оферты</p></a>
+                    <a href="#">
+                        <p>Договор оферты</p>
+                    </a>
                 </div>
             </div>
         </div>
