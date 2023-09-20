@@ -544,8 +544,11 @@ body {
 
                     .bg-image1 {
                         position: relative;
-                        z-index: 2;
-                        animation: rotateImg 14s ease-in-out alternate infinite;
+                        z-index: 0;
+                        top: 0px;
+                        right: -50px;
+                        width: 1280px;
+                        // animation: rotateImg 14s ease-in-out alternate infinite;
                     }
 
                     .bg-image2 {
@@ -904,6 +907,7 @@ body {
             .coin-marquee-item-inner:hover {
                 color: #c0c0c0;
             }
+
             .coin-marquee-item-inner:hover .coin-marquee-item-name {
                 opacity: 0.8;
             }
