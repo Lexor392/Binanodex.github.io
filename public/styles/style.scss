@@ -14,6 +14,10 @@ body {
 body {
     background: rgb(5, 5, 5);
 
+    .img-hidden {
+        display: none;
+    }
+
     .container {
         max-width: 1320px;
         margin: 0 auto;
@@ -244,6 +248,7 @@ body {
     .main {
         .main-section {
             background: url('../images/main-section-bg2.png') no-repeat center top -180px;
+            position: relative;
 
             .bg-image {
                 position: absolute;
@@ -514,6 +519,10 @@ body {
                     }
                 }
             }
+
+            .first-screen-img {
+                display: none;
+            }
         }
 
         .about-section {
@@ -634,7 +643,11 @@ body {
 
         .advantages-section {
             padding-top: 40px;
-
+            
+            .block-bg {
+                display: none;
+            }
+            
             .container {
                 position: relative;
 
