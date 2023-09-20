@@ -195,6 +195,7 @@ body {
                             height: 20px;
                             background-size: contain;
                         }
+
                         .btn-close:focus {
                             box-shadow: none;
                             border: none;
@@ -320,26 +321,27 @@ body {
             }
 
             .top-bg {
-                position: absolute;
+                position: relative;
                 top: 0;
                 z-index: 1;
-                left: -300px;
-                background: url(../images/top-bg2.png) no-repeat center top;
-                width: 1660px;
-                height: 50px;
+                left: -50px;
+                background: url(../images/top-bg2.png) repeat-x center top;
+                width: 100%;
+                height: 30px;
             }
 
             .container {
                 position: relative;
                 display: flex;
                 justify-content: space-between;
+                margin-top: -30px;
 
                 .container-content {
                     width: max-content;
                     display: grid;
                     position: relative;
                     padding-top: 208px;
-                    padding-bottom: 410px;
+                    padding-bottom: 370px;
 
                     h2 {
                         font-family: 'Bebas Neue';
@@ -440,10 +442,10 @@ body {
 
                             color: #FFF;
                             font-family: Muller;
-                            font-size: 17px;
+                            font-size: 22px;
                             font-style: normal;
                             font-weight: 400;
-                            line-height: 160%;
+                            line-height: 140%;
                             /* 27.2px */
                         }
                     }
@@ -515,7 +517,8 @@ body {
         }
 
         .about-section {
-            padding-bottom: 300px;
+            padding-bottom: 260px;
+            padding-top: 40px;
             background: url('../images/about-section2-bg2.png') no-repeat center;
 
             .container {
@@ -627,13 +630,15 @@ body {
         }
 
         .advantages-section {
+            padding-top: 40px;
+
             .container {
                 position: relative;
 
                 .bg-image1 {
                     position: absolute;
                     left: -624px;
-                    top: 700px;
+                    top: 630px;
                 }
 
                 .bg-image2 {
@@ -652,7 +657,7 @@ body {
                     position: absolute;
                     width: 863.463px;
                     left: -780px;
-                    top: 1020px;
+                    top: 900px;
                     height: 505.853px;
                     transform: rotate(26.987deg);
                     flex-shrink: 0;
@@ -759,7 +764,7 @@ body {
 
                     .container-arrow {
                         position: absolute;
-                        right: 400px;
+                        right: 380px;
                         top: 746px;
                     }
 
@@ -845,12 +850,23 @@ body {
                     }
 
                 }
+
+                .btn-container {
+                    a .btn {
+                        width: 473px;
+                        height: 103px;
+
+                        span {
+                            font-size: 26px;
+                        }
+                    }
+                }
             }
         }
     }
 
     .footer {
-        padding: 120px 0 108px 0;
+        padding: 120px 0 0 0;
 
         .container {
             .footer-content {
@@ -879,6 +895,17 @@ body {
                 p:hover {
                     text-decoration: underline;
                 }
+            }
+
+            .coin-marquee-item-info {
+                font-family: Muller;
+            }
+
+            .coin-marquee-item-inner:hover {
+                color: #c0c0c0;
+            }
+            .coin-marquee-item-inner:hover .coin-marquee-item-name {
+                opacity: 0.8;
             }
         }
     }

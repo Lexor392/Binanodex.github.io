@@ -121,39 +121,55 @@
                     }
 
                     .img-container {
-                        top: -162px;
-                        left: -180px;
-                        scale: 0.44;
+                        top: -72px;
+                        left: -184px;
+                        scale: .42;
                     }
 
                     .container-content {
                         padding-top: 133px;
-                        padding-bottom: 210px;
+                        padding-bottom: 150px;
+                        width: 100%;
 
                         h2 {
-                            font-size: 43.216px;
+                            font-size: 13.3vw;
                             font-style: normal;
                             font-weight: 700;
                             text-transform: uppercase;
-
                         }
 
                         h2.t-white {
-                            line-height: 50.653px;
+
+                            line-height: 16vw;
                         }
 
                         h2.t-orange {
-                            line-height: 50.653px;
+
+                            line-height: 16vw;
                         }
 
                         .tag-p {
-                            right: -10px;
-                            top: 208px;
-                            scale: 0.5;
+                            position: initial;
+                            scale: 1;
+                            margin: 0;
+                            width: 144px;
+                            height: 29px;
+                            margin-left: 43vw;
+
+
+                            img {
+                                margin-right: 4px;
+                            }
+                            span {
+                                font-size: 8px;
+                            }
                         }
 
                         .tag-subimg {
-                            display: none;
+                            position: relative;
+                            right: auto;
+                            top: 12px;
+                            left: 0;
                         }
 
                         ul {
@@ -170,7 +186,8 @@
                 }
 
                 .top-bg {
-                    display: none;
+                    left: 0;
+                    top: 20px;
                 }
             }
 
@@ -255,7 +272,7 @@
                     .bg-image3 {
                         display: block;
                         right: -300px;
-                        top: 1830px;
+                        top: 1460px;
                         width: 580px;
                     }
 
@@ -310,6 +327,24 @@
                             scale: 0.6;
                             top: -60px;
                             margin-bottom: -70px;
+
+                            .tag {
+                                width: 400px;
+                                justify-content: left;
+                            }
+                        }
+                    }
+
+                    .btn-container {
+                        a {
+                            .btn {
+                                width: 280px;
+                                height: 73px;
+
+                                span {
+                                    font-size: 18px;
+                                }
+                            }
                         }
                     }
                 }
