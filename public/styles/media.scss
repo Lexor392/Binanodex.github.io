@@ -35,7 +35,20 @@
             .navbar {
                 padding: 32px 0;
 
+                .navbar-brand {
+                    img {
+                        width: 42.8vw;
+                    }
+                }
+
                 .container {
+                    .navbar-toggler {
+                        .navbar-toggler-icon {
+                            width: 9.8vw;
+                            height: 5.6vw;
+                        }
+                    }
+
                     .offcanvas {
                         .offcanvas-title {
                             display: flex;
@@ -58,6 +71,7 @@
                         right: 0;
                         bottom: 0;
                         overflow-y: auto;
+                        transition: all 0.3s ease;
                         /* Добавьте это свойство, чтобы обеспечить прокрутку контента, если он слишком длинный. */
                     }
                 }
@@ -105,11 +119,27 @@
                         display: none;
                     }
 
-                    .bg-image7 {
+                    .bg-image3 {
+                        position: absolute;
                         display: block;
-                        left: -130px;
-                        top: 430px;
-                        width: 250px;
+                        right: 4vw;
+                        top: 90px;
+                    }
+
+                    .bg-image5 {
+                        position: absolute;
+                        display: block;
+                        right: 40vw;
+                        left: auto;
+                        top: 110vw;
+                        width: 30vw;
+                    }
+
+                    .bg-image9 {
+                        display: block;
+                        left: 0;
+                        top: 132vw;
+                        width: 35vw;
                     }
 
                     .img-container {
@@ -121,15 +151,18 @@
 
                     .container-content {
                         padding-top: 142px;
+                        // padding-top: 44.4vw;
                         padding-bottom: 20px;
                         width: 100%;
 
                         h2 {
-                            font-size: 13.3vw;
+                            font-size: 14vw;
                             font-style: normal;
                             font-weight: 700;
                             text-transform: uppercase;
                             width: max-content;
+                            position: relative;
+                            z-index: 1;
                         }
 
                         h2.t-white {
@@ -143,22 +176,27 @@
                         }
 
                         .tag-p {
-                            position: initial;
+                            position: relative;
+                            right: auto;
+                            top: auto;
+                            z-index: 5;
                             scale: 1;
                             margin: 0;
-                            width: 120px;
-                            height: 24px;
-                            margin-left: auto;
-                            margin-right: 60px;
-                            margin-top: -20px;
+                            width: 51.875vw;
+                            height: 8.6vw;
+                            margin: 0;
+                            background: none;
+                            background: url('../images/label.svg') no-repeat center / cover;
 
 
                             img {
                                 margin-right: 3px;
+                                display: none;
                             }
 
                             span {
                                 font-size: 6px;
+                                display: none;
                             }
                         }
 
@@ -168,20 +206,28 @@
                             top: -16px;
                             left: -30px;
                             width: 240px;
+                            display: none;
                         }
 
                         ul {
-                            margin-top: 0px;
-                            margin-bottom: 48px;
+                            margin-top: 22px;
+                            margin-bottom: 0;
                             position: relative;
                             z-index: 5;
 
                             li {
-                                font-size: 12px;
-                                line-height: 15.243px;
-                                width: 190px;
+                                color: white;
+                                font-size: 3.4vw;
+                                font-family: Montserrat;
+                                font-weight: 500;
+                                line-height: 6vw;
+                                letter-spacing: .2px;
+                                word-wrap: break-word;
+                                width: 46vw;
                                 background-position: 0px 1px;
                                 padding-left: 13px;
+                                background: none;
+                                padding: 0;
 
                                 br {
                                     display: none;
@@ -191,15 +237,19 @@
                     }
 
                     .btn-container {
-                        margin-top: 120px;
+                        width: 100%;
                         z-index: 5;
                         margin: 0 auto;
-                        margin-top: 100px;
+                        margin-top: 40vw;
 
                         a {
                             .btn {
                                 width: 88vw;
+                                margin: 0 auto;
                                 height: 16vw;
+                                background: linear-gradient(95deg, #FFC700 0%, #ff8600 100%);
+                                box-shadow: 0px -1.4043583869934082px 19.66101837158203px #FFD596 inset;
+                                border-radius: 7.02px;
 
                                 span {
                                     font-size: 4vw;
@@ -208,11 +258,16 @@
                         }
 
                         p {
-                            font-size: 15px;
-                            width: 250px;
-                            background-position: 0 5px;
+                            color: #BDBDBD;
+                            font-size: 3.43vw;
+                            font-family: Montserrat;
+                            font-weight: 400;
+                            line-height: 117.5%;
+                            word-wrap: break-word;
+                            width: 78%;
+                            background-position: 0 2px;
                             padding-left: 2px;
-                            margin-top: 10px;
+                            margin-top: 16px;
                         }
                     }
                 }
@@ -221,13 +276,50 @@
                     display: block;
                     position: absolute;
                     right: 0;
-                    top: 13vw;
+                    top: 130px;
+                    width: 68vw;
+                    z-index: 2;
+                    animation: rotateClockwise 4s ease-in-out alternate infinite;
+                }
+
+                .first-screen-img2 {
+                    display: block;
+                    position: absolute;
+                    z-index: 0;
+                    right: 0;
+                    top: 112px;
+                    opacity: 0.8;
+                    width: 82vw;
+                    animation: pulseClockwise 4s ease-in-out alternate infinite;
+                }
+
+                @keyframes rotateClockwise {
+                    0% {
+                        transform: rotate(-1deg) scale(1.02);
+                        right: -4px;
+                    }
+
+                    100% {
+                        transform: rotate(1deg) scale(1);
+                        right: -4px;
+                    }
+                }
+
+                @keyframes pulseClockwise {
+                    0% {
+                        opacity: 0.4;
+                    }
+
+                    100% {
+                        opacity: 0.8;
+                    }
                 }
 
                 .top-bg {
-                    left: 0;
-                    top: 20px;
-                    background-size: cover;
+                    // left: 0;
+                    // top: 20px;
+                    // background-size: cover;
+                    display: none;
                 }
             }
 
@@ -355,7 +447,7 @@
 
                         h2,
                         h2 span {
-                            font-size: 43.216px;
+                            font-size: 14.5vw;
                             font-style: normal;
                             font-weight: 700;
                             text-transform: uppercase;
@@ -378,11 +470,25 @@
                                     height: 90vw;
                                 }
 
+                                .card-number {
+                                    width: 18.75vw;
+                                    height: 18.75vw;
+                                    margin-top: -9.4vw;
+
+                                    span {
+                                        font-size: 12.8vw;
+                                    }
+                                }
+
                                 .card-subtitle {
-                                    margin-top: 6px;
+                                    margin-top: 10px;
 
                                     p {
-                                        font-size: 4.6vw;
+                                        font-size: 5.6vw;
+
+                                        br {
+                                            display: initial;
+                                        }
                                     }
                                 }
                             }
@@ -390,7 +496,7 @@
 
                         .container-subtitle {
                             margin-top: 180px;
-                            margin-bottom: 11px;
+                            margin-bottom: 33px;
                             color: #fff;
                             text-align: center;
                             font-family: Muller;
@@ -414,31 +520,62 @@
                     .btn-container {
                         a {
                             .btn {
-                                width: 280px;
-                                height: 73px;
+                                width: 88vw;
+                                margin: 0 auto;
+                                height: 16vw;
+                                background: linear-gradient(95deg, #FFC700 0%, #ff8600 100%);
+                                box-shadow: 0px -1.404358387px 19.6610183716px #ffd596 inset;
+                                border-radius: 7.02px;
 
                                 span {
-                                    font-size: 18px;
+                                    font-size: 4vw;
                                 }
                             }
+                        }
+
+                        p {
+                            font-size: 3.577vw;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 170%;
+                            width: 68vw;
+                            background-position: 0 0.8vw;
+                            margin-bottom: 39px;
                         }
                     }
                 }
 
+                .container-two {
+                    margin-top: -90vw;
+                }
+
                 .bg-image4 {
-                    position: relative;
+                    position: absolute;
                     display: block;
                     margin: 0;
-                    margin-top: -680px;
-                    margin-bottom: -40px;
+                    margin-top: -230px;
+                    width: 90vw;
+                    z-index: 0;
                 }
+
+                .image6 {
+                    position: absolute;
+                    display: block;
+                    z-index: 1;
+                    width: 100%;
+                    height: 6.6vw;
+                    background: url(../images/cryptocurrencies.png) no-repeat 25% center / cover;
+                }
+
                 .bg-image5 {
                     position: relative;
                     display: block;
                     margin: 0;
-                    margin-top: -680px;
-                    margin-bottom: -40px;
+                    margin-top: -330px;
+                    margin-bottom: 0;
                     margin-left: auto;
+                    width: 100vw;
+                    z-index: 0;
                 }
             }
         }
