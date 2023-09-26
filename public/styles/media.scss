@@ -171,7 +171,7 @@
                         }
 
                         h2.t-orange {
-
+                            margin-bottom: 0;
                             line-height: 16vw;
                         }
 
@@ -198,6 +198,10 @@
                                 font-size: 6px;
                                 display: none;
                             }
+                        }
+
+                        .tag-en {
+                            background: url('../images/label-en.svg') no-repeat center / cover;
                         }
 
                         .tag-subimg {
@@ -268,6 +272,10 @@
                             background-position: 0 2px;
                             padding-left: 2px;
                             margin-top: 16px;
+                        }
+
+                        p.w-en {
+                            padding-left: 6px;
                         }
                     }
                 }
@@ -603,6 +611,11 @@
                         a {
                             p {
                                 font-size: 3vw;
+                            }
+
+                            p.w-en {
+                                padding-left: 8px;
+                                background-position: 0 5px;
                             }
                         }
                     }

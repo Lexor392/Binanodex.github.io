@@ -221,10 +221,25 @@ body {
                                     font-weight: 700;
                                     line-height: normal;
                                     text-transform: uppercase;
+
+                                    .btn {
+                                        color: #fff;
+                                        font-family: Montserrat;
+                                        font-size: 15px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: normal;
+                                        text-transform: uppercase;
+                                    }
                                 }
 
                                 .nav-link:hover {
                                     color: #FFC700;
+
+                                    .btn {
+                                        background-color: #fff;
+                                        color: #111111;
+                                    }
                                 }
                             }
 
@@ -369,7 +384,8 @@ body {
 
                     h2.t-orange {
                         margin-top: -20px;
-                        line-height: 93.225px;
+                        line-height: 103.225px;
+                        margin-bottom: -20px;
                         background: radial-gradient(circle, #FFC700 18.5%, #FF8A00 72.4%);
                         background-size: 180% 180%;
                         background-clip: text;
@@ -643,11 +659,11 @@ body {
 
         .advantages-section {
             padding-top: 40px;
-            
+
             .block-bg {
                 display: none;
             }
-            
+
             .container {
                 position: relative;
 
